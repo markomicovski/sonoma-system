@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="font-sans min-h-screen bg-tech-primary text-tech-secondary flex flex-col items-center justify-center p-8">
