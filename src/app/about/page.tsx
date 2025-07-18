@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className="min-h-screen bg-tech-primary text-tech-secondary flex flex-col items-center justify-center p-8">
-      <div className="w-full max-w-2xl flex flex-col gap-12 items-center">
+      <div className="w-full max-w-2xl flex flex-col gap-12 items-center relative">
         <h1 className="text-4xl font-bold text-tech-accent text-center mb-4">About Sonoma-System</h1>
         <div className="flex flex-col items-center gap-6">
           <div className="w-32 h-32 rounded-full bg-tech-accent/30 flex items-center justify-center mb-2">

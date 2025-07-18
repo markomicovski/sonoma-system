@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -23,10 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-tech-primary text-tech-secondary min-h-screen flex flex-col">
         <nav className="w-full sticky top-0 z-50 bg-tech-primary/95 shadow-md border-b border-tech-accent/20">
-          <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+          <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-2">
             <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-tech-accent">
-              <span className="inline-block w-8 h-8 bg-tech-accent rounded-full mr-2"></span>
-              Sonoma-System
+              <Image src="/logo.png" alt="Sonoma-System Logo" width={112} height={75} />
             </Link>
             <div className="flex gap-6 items-center text-lg font-semibold">
               {navLinks.map(link => (

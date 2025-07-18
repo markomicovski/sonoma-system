@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function Services() {
   return (
     <div className="min-h-screen bg-tech-primary text-tech-secondary flex flex-col items-center justify-center p-8">
-      <div className="w-full max-w-6xl flex flex-col gap-12 items-center">
+      <div className="w-full max-w-6xl flex flex-col gap-12 items-center relative">
         <h1 className="text-4xl font-bold text-tech-accent text-center mb-4">Our Services</h1>
         <div className="grid gap-8 md:grid-cols-3 w-full">
           <div className="bg-tech-secondary/10 rounded-2xl p-8 shadow-lg border border-tech-accent/20 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-transform">

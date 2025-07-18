@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function Contact() {
   return (
     <div className="min-h-screen bg-tech-primary text-tech-secondary flex flex-col items-center justify-center p-8">
-      <div className="w-full max-w-lg flex flex-col gap-12 items-center">
+      <div className="w-full max-w-lg flex flex-col gap-12 items-center relative">
         <h1 className="text-4xl font-bold text-tech-accent text-center mb-4">Contact Us</h1>
         <form 
           action="https://formspree.io/f/xblklyww" 
