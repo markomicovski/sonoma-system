@@ -38,6 +38,7 @@ export default function RootLayout({
                   {link.label}
                 </Link>
               ))}
+              <Link href="/contact" className="ml-4 bg-gradient-to-r from-blue-500 to-cyan-400 text-[#0f172a] font-semibold px-5 py-2 rounded-full shadow hover:from-cyan-400 hover:to-blue-500 transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-400">Contact</Link>
             </div>
           </div>
         </nav>
