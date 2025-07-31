@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function About() {
   return (
     <div className="min-h-screen bg-tech-primary text-tech-secondary flex flex-col items-center justify-center p-8">

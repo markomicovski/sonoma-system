@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Services() {
   return (
     <div className="min-h-screen bg-tech-primary text-tech-secondary flex flex-col items-center justify-center p-4 sm:p-8">
