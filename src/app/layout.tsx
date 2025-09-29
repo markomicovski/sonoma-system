@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navigation from "./components/Navigation";
+import Chatbot from "./components/Chatbot";
 
 export const metadata = {
   title: "Sonoma System | Automation Agency for Restaurants, Hotels, and Businesses",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <footer className="w-full bg-transparent border-t border-white/10 py-8 mt-20 text-center text-white/60 text-sm">
           &copy; {new Date().getFullYear()} Sonoma-System. All rights reserved.
         </footer>
+        <Chatbot />
       </body>
     </html>
   );
