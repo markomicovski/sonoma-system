@@ -82,40 +82,55 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Demo responses for when OpenAI API is not available
+// Advanced sales-focused demo responses
 function getDemoResponse(message: string): string {
-  if (message.includes('service') || message.includes('offer')) {
-    return "We offer comprehensive automation solutions for restaurants, hotels, and high-end businesses:\n\n🤖 **AI Agents** - Digital experts that automate decisions and connect your apps\n💬 **AI Chatbots** - 24/7 guest engagement for bookings and messaging\n📅 **Booking & POS Sync** - Seamless reservation and payment integration\n📦 **Inventory Automation** - Real-time tracking, alerts, and auto-reordering\n⚙️ **Custom Workflows** - Tailored automations via Make.com, Zapier, and n8n\n\nWould you like to learn more about any specific service?";
+  const lowerMessage = message.toLowerCase();
+  
+  // High-intent pricing questions
+  if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('how much') || lowerMessage.includes('budget')) {
+    return "Great question! Our automation solutions typically range from $2,000-15,000+ depending on your specific needs. For example:\n\n• **Basic chatbot setup**: $2,000-5,000\n• **Full restaurant automation**: $8,000-15,000\n• **Enterprise solutions**: Custom pricing\n\nI'd love to give you an exact quote based on your current setup. What type of business are you running, and what's your biggest operational challenge right now?";
   }
   
-  if (message.includes('restaurant') || message.includes('hotel')) {
-    return "Perfect! We specialize in automation for restaurants and hotels. Our solutions can help you:\n\n• **Reduce manual work** by 70-80%\n• **Improve guest experience** with instant responses\n• **Increase revenue** through automated upselling\n• **Prevent stockouts** with smart inventory management\n• **Streamline bookings** across all platforms\n\nI'd love to show you exactly how this works for your business. Would you like to book a free demo?";
+  // Results and ROI questions
+  if (lowerMessage.includes('result') || lowerMessage.includes('roi') || lowerMessage.includes('save') || lowerMessage.includes('benefit')) {
+    return "Our clients typically see:\n\n📈 **40-60% reduction** in manual work within 30 days\n💰 **25-40% increase** in revenue through better customer engagement\n⏰ **10-15 hours saved** per week on repetitive tasks\n📞 **80% fewer** missed calls and inquiries\n\nFor example, one restaurant client went from 3 hours daily on inventory management to 15 minutes. Another hotel increased bookings by 45% with our chatbot.\n\nWhat's your biggest time-waster right now? I can show you exactly how we'd solve it.";
   }
   
-  if (message.includes('price') || message.includes('cost') || message.includes('how much')) {
-    return "Great question! Our pricing is customized based on your specific needs and the complexity of your automation requirements. \n\nSince every business is unique, we offer **free consultation calls** to understand your goals and provide accurate pricing.\n\nWould you like to book a free demo? I can show you exactly what's possible and give you a custom quote. You can schedule here: [Book Demo](https://calendly.com/marko-micovski-sonoma-system/30min)";
+  // Timeline questions
+  if (lowerMessage.includes('timeline') || lowerMessage.includes('how long') || lowerMessage.includes('when') || lowerMessage.includes('implementation')) {
+    return "Most implementations are live within 2-4 weeks:\n\n**Week 1**: Discovery and planning\n**Week 2**: Development and testing\n**Week 3**: Integration with your systems\n**Week 4**: Go-live and training\n\nWe handle everything - you just approve the final result. What's your ideal timeline? Are you looking to have this running before a busy season?";
   }
   
-  if (message.includes('demo') || message.includes('book') || message.includes('meeting')) {
-    return "Excellent! I'd love to show you how automation can transform your business. \n\nYou can book a free 30-minute demo with our founder Marko Micovski here:\n\n📅 **Book Your Free Demo**: https://calendly.com/marko-micovski-sonoma-system/30min\n\nDuring the demo, we'll:\n• Analyze your current processes\n• Show you relevant automation examples\n• Discuss your specific goals\n• Provide a custom implementation plan\n\nOr feel free to email us directly at info@sonoma-system.com";
+  // Demo booking requests
+  if (lowerMessage.includes('demo') || lowerMessage.includes('book') || lowerMessage.includes('meeting') || lowerMessage.includes('call')) {
+    return "Perfect! I'd love to show you exactly how this works for your business.\n\nDuring our 30-minute demo, Marko will:\n\n🎯 **Analyze your current setup** and identify the biggest opportunities\n📊 **Show you real examples** from similar businesses in your industry\n💰 **Calculate your potential ROI** based on your specific situation\n⚡ **Build a custom automation plan** tailored to your needs\n\nYou'll leave with a clear roadmap of exactly what we'd build for you and how much it would save you.\n\n**Book your free demo here**: https://calendly.com/marko-micovski-sonoma-system/30min\n\nWhat's your biggest operational challenge right now? I'll make sure Marko prepares some specific examples for your industry.";
   }
   
-  if (message.includes('contact') || message.includes('email') || message.includes('phone')) {
-    return "I'd be happy to connect you with our team!\n\n📧 **Email**: info@sonoma-system.com\n📅 **Book a Demo**: https://calendly.com/marko-micovski-sonoma-system/30min\n🌐 **Website**: sonoma-system.com\n\nOur founder Marko Micovski personally handles all consultations. We typically respond within 24 hours and can accommodate different time zones.";
+  // Business type identification
+  if (lowerMessage.includes('restaurant') || lowerMessage.includes('hotel') || lowerMessage.includes('hospitality') || lowerMessage.includes('food service')) {
+    return "Perfect! We specialize in automation for restaurants and hotels. Our solutions can help you:\n\n• **Reduce manual work** by 70-80%\n• **Improve guest experience** with instant responses\n• **Increase revenue** through automated upselling\n• **Prevent stockouts** with smart inventory management\n• **Streamline bookings** across all platforms\n\nI'd love to show you exactly how this works for your business. What's your biggest operational challenge right now?";
   }
   
-  if (message.includes('inventory') || message.includes('stock')) {
-    return "Inventory automation is one of our most popular services! We help restaurants and hotels:\n\n📊 **Real-time tracking** across all locations\n🚨 **Smart alerts** when stock is running low\n📋 **Automated reordering** based on usage patterns\n💰 **Cost optimization** by preventing overstocking\n📈 **Analytics** to predict demand\n\nThis typically reduces stockouts by 80% and saves 10-15 hours per week on manual inventory management.\n\nWould you like to see how this works for your specific inventory needs?";
+  // Pain point identification
+  if (lowerMessage.includes('struggling') || lowerMessage.includes('problem') || lowerMessage.includes('issue') || lowerMessage.includes('challenge') || lowerMessage.includes('difficult')) {
+    return "I understand you're facing some challenges. That's exactly why we exist - to solve these exact problems for businesses like yours.\n\nOur automation solutions have helped hundreds of restaurants and hotels overcome similar issues. We typically see:\n\n✅ **80% reduction** in time spent on repetitive tasks\n✅ **40-60% increase** in customer satisfaction\n✅ **25-40% boost** in revenue\n\nWhat specific challenge is costing you the most time or money right now? I can show you exactly how we'd solve it.";
   }
   
-  if (message.includes('chatbot') || message.includes('chat')) {
-    return "Our AI chatbots are incredibly powerful! They can:\n\n💬 **Handle 24/7 guest inquiries** across your website, WhatsApp, and Telegram\n📅 **Process bookings** automatically\n🍽️ **Upsell services** intelligently\n❓ **Answer FAQs** instantly\n📞 **Route complex issues** to your team\n\nWe've helped clients reduce response times from hours to seconds and increase bookings by 40-60%.\n\nWould you like to see a live demo of how our chatbots work?";
+  // Service inquiries
+  if (lowerMessage.includes('service') || lowerMessage.includes('offer') || lowerMessage.includes('what do you do')) {
+    return "We offer comprehensive automation solutions for restaurants, hotels, and high-end businesses:\n\n🤖 **AI Agents** - Digital experts that automate decisions and connect your apps\n💬 **AI Chatbots** - 24/7 guest engagement for bookings and messaging\n📅 **Booking & POS Sync** - Seamless reservation and payment integration\n📦 **Inventory Automation** - Real-time tracking, alerts, and auto-reordering\n⚙️ **Custom Workflows** - Tailored automations via Make.com, Zapier, and n8n\n\nWhat type of business are you running? I'd love to show you which solutions would have the biggest impact for you.";
   }
   
-  if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
-    return "Hello! Welcome to Sonoma System. I'm here to help you discover how automation can transform your restaurant, hotel, or business operations.\n\nWhat would you like to know about our services? I can tell you about:\n• AI-powered chatbots\n• Inventory automation\n• Booking and POS integration\n• Custom workflow automation\n• Or anything else you're curious about!";
+  // Contact information
+  if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('phone') || lowerMessage.includes('reach')) {
+    return "I'd be happy to connect you with our team!\n\n📧 **Email**: info@sonoma-system.com\n📅 **Book a Demo**: https://calendly.com/marko-micovski-sonoma-system/30min\n🌐 **Website**: sonoma-system.com\n\nOur founder Marko Micovski personally handles all consultations. We typically respond within 24 hours and can accommodate different time zones.\n\nWhat's the best way to reach you, and what's your biggest operational challenge right now?";
   }
   
-  // Default response for other questions
-  return "That's a great question! I'd love to help you with that. \n\nOur automation solutions are quite comprehensive, and I want to make sure I give you the most relevant information. Could you tell me a bit more about your business or what specific challenge you're looking to solve?\n\nAlternatively, you can book a free consultation where our founder Marko can provide personalized advice: https://calendly.com/marko-micovski-sonoma-system/30min";
+  // Greeting
+  if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
+    return "Hello! Welcome to Sonoma System. I'm here to help you discover how automation can transform your restaurant, hotel, or business operations.\n\nI'd love to understand your current situation better. What type of business are you running, and what's your biggest operational challenge right now?";
+  }
+  
+  // Default response - always sales-focused
+  return "That's a great question! I'd love to help you with that.\n\nTo give you the most relevant information, could you tell me:\n\n1. What type of business are you running?\n2. What's your biggest operational challenge right now?\n3. How much time do you currently spend on repetitive tasks?\n\nBased on your answers, I can show you exactly how our automation solutions would solve your specific problems and calculate your potential ROI.\n\nAlternatively, you can book a free consultation where our founder Marko can provide personalized advice: https://calendly.com/marko-micovski-sonoma-system/30min";
 }
