@@ -4,7 +4,7 @@ import { generateSystemPrompt } from '../../config/chatbot-config';
 
 // Use Groq API (free alternative to OpenAI)
 const openai = new OpenAI({
-  apiKey: process.env.GROQ_API_KEY || process.env.DEEPSEEK_API_KEY || process.env.OPENAI_API_KEY,
+  apiKey: process.env.GROQ_API_KEY || process.env.DEEPSEEK_API_KEY || process.env.OPENAI_API_KEY || 'dummy-key-for-build',
   baseURL: process.env.GROQ_API_KEY ? 'https://api.groq.com/openai/v1' : 
            process.env.DEEPSEEK_API_KEY ? 'https://api.deepseek.com' : undefined,
 });
@@ -18,9 +18,13 @@ export async function POST(request: NextRequest) {
     }
 
     // DEMO MODE: Check if API key is available and working
-    if ((!process.env.GROQ_API_KEY || process.env.GROQ_API_KEY === 'your_groq_api_key_here') && 
-        (!process.env.DEEPSEEK_API_KEY || process.env.DEEPSEEK_API_KEY === 'your_deepseek_api_key_here') && 
-        (!process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY === 'your_openai_api_key_here')) {
+    const hasValidApiKey = (
+      (process.env.GROQ_API_KEY && process.env.GROQ_API_KEY !== 'your_groq_api_key_here' && process.env.GROQ_API_KEY !== 'dummy-key-for-build') ||
+      (process.env.DEEPSEEK_API_KEY && process.env.DEEPSEEK_API_KEY !== 'your_deepseek_api_key_here' && process.env.DEEPSEEK_API_KEY !== 'dummy-key-for-build') ||
+      (process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY !== 'your_openai_api_key_here' && process.env.OPENAI_API_KEY !== 'dummy-key-for-build')
+    );
+
+    if (!hasValidApiKey) {
       // Demo mode with predefined responses
       const demoResponse = getDemoResponse(message.toLowerCase());
       return NextResponse.json({ 
