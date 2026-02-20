@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonoma System — Recover the Revenue Your Store Is Losing</title>
+    <meta name="description" content="AI employees that recover abandoned carts on WhatsApp, handle support in 10 seconds, and bring customers back. Live on your Shopify store in 48 hours.">
+    <meta property="og:title" content="Sonoma System — Recover the Revenue Your Store Is Losing">
+    <meta property="og:description" content="AI employees for Shopify stores. Recover carts, automate support, retain customers. Live in 48 hours.">
+    <link rel="canonical" href="https://sonoma-system.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #FAFAF8;
+            --surface: #FFFFFF;
+            --surface-alt: #F3F2EF;
+            --border: #E8E6E1;
+            --border-hover: #D0CDC6;
+            --text-primary: #1A1917;
+            --text-secondary: #6B6862;
+            --text-tertiary: #9C9890;
+            --accent: #1A1917;
+            --accent-hover: #2D2D2A;
+            --cta-bg: #1A1917;
+            --cta-text: #FAFAF8;
+            --nova: #1B7A4A;
+            --nova-surface: #F0F8F4;
+            --nova-border: #C8E6D5;
+            --aria: #2563A8;
+            --aria-surface: #EFF5FC;
+            --aria-border: #BDD4EE;
+            --max: #7C3ABA;
+            --max-surface: #F5F0FC;
+            --max-border: #D4BEF0;
+            --gold: #A68A3E;
+            --gold-surface: #FAF7F0;
+        }
+
+        html { scroll-behavior: smooth; }
+        ::selection { background: var(--text-primary); color: var(--bg); }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ═══════════════════════════════
+           TYPOGRAPHY
+        ═══════════════════════════════ */
+        .serif { font-family: 'DM Serif Display', Georgia, serif; }
+
+        /* ═══════════════════════════════
+           NAV
+        ═══════════════════════════════ */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(250, 250, 248, 0.85);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-inner {
+            max-width: 1180px; margin: 0 auto;
+            padding: 16px 32px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            font-size: 18px; font-weight: 700; letter-spacing: 0.04em;
+            text-transform: uppercase; color: var(--text-primary);
+        }
+        .logo span {
+            display: inline-block; margin-left: 10px;
+            font-size: 10px; font-weight: 600; letter-spacing: 0.08em;
+            padding: 3px 8px; border-radius: 4px;
+            background: var(--text-primary); color: var(--bg);
+            vertical-align: middle; position: relative; top: -1px;
+        }
+        .nav-links { display: flex; gap: 32px; align-items: center; list-style: none; }
+        .nav-links a {
+            font-size: 14px; font-weight: 500; color: var(--text-secondary);
+            text-decoration: none; transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--text-primary); }
+        .nav-cta {
+            font-size: 14px; font-weight: 600; color: var(--cta-text) !important;
+            background: var(--cta-bg); padding: 10px 22px; border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .nav-cta:hover { background: var(--accent-hover) !important; color: var(--cta-text) !important; }
+
+        /* ═══════════════════════════════
+           LAYOUT
+        ═══════════════════════════════ */
+        .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+        section { padding: 120px 0; }
+
+        /* ═══════════════════════════════
+           BUTTONS
+        ═══════════════════════════════ */
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 18px 36px; border-radius: 10px;
+            font-family: inherit; font-size: 16px; font-weight: 600;
+            text-decoration: none; cursor: pointer; border: none;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background: var(--cta-bg); color: var(--cta-text);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(26, 25, 23, 0.15);
+        }
+        .btn-ghost {
+            background: transparent; color: var(--text-primary);
+            border: 1.5px solid var(--border);
+        }
+        .btn-ghost:hover {
+            border-color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+        .btn-arrow::after { content: '→'; transition: transform 0.2s; }
+        .btn-arrow:hover::after { transform: translateX(4px); }
+
+        /* ═══════════════════════════════
+           HERO
+        ═══════════════════════════════ */
+        .hero {
+            padding: 160px 0 100px;
+            position: relative;
+        }
+        .hero-grid {
+            display: grid; grid-template-columns: 1fr 420px;
+            gap: 64px; align-items: center;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--surface); border: 1px solid var(--border);
+            padding: 6px 16px 6px 8px; border-radius: 100px;
+            font-size: 13px; font-weight: 500; color: var(--text-secondary);
+            margin-bottom: 28px;
+        }
+        .hero-badge-dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--nova); display: inline-block;
+            animation: pulse 2s ease infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .hero h1 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(40px, 5.5vw, 68px);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+        .hero h1 em {
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        .hero-sub {
+            font-size: 18px; line-height: 1.65;
+            color: var(--text-secondary);
+            max-width: 520px; margin-bottom: 40px;
+        }
+        .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+        .hero-proof {
+            display: flex; align-items: center; gap: 16px;
+            margin-top: 48px; padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+        .hero-proof-item {
+            font-size: 13px; color: var(--text-tertiary); font-weight: 500;
+        }
+        .hero-proof-sep { color: var(--border); }
+
+        /* Hero phone */
+        .hero-phone {
+            background: var(--text-primary); border-radius: 28px;
+            padding: 16px; position: relative;
+            box-shadow:
+                0 2px 4px rgba(0,0,0,0.04),
+                0 8px 16px rgba(0,0,0,0.06),
+                0 24px 48px rgba(0,0,0,0.08);
+        }
+        .phone-screen {
+            background: #111; border-radius: 16px;
+            padding: 16px; min-height: 440px;
+        }
+        .phone-bar {
+            display: flex; align-items: center; gap: 10px;
+            padding-bottom: 14px; margin-bottom: 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .phone-avi {
+            width: 32px; height: 32px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 13px; font-weight: 700; color: #fff;
+            background: var(--nova);
+        }
+        .phone-meta { flex: 1; }
+        .phone-name { font-size: 14px; font-weight: 600; color: #fff; }
+        .phone-channel { font-size: 11px; color: rgba(255,255,255,0.35); }
+        .phone-online {
+            width: 7px; height: 7px; border-radius: 50%;
+            background: #34C759;
+        }
+        .chat { display: flex; flex-direction: column; gap: 7px; }
+        .bubble {
+            max-width: 82%; padding: 10px 14px;
+            border-radius: 16px; font-size: 13.5px; line-height: 1.45;
+            animation: fadeUp 0.4s ease backwards;
+        }
+        .bubble:nth-child(1) { animation-delay: 0.5s; }
+        .bubble:nth-child(2) { animation-delay: 1.2s; }
+        .bubble:nth-child(3) { animation-delay: 2s; }
+        .bubble:nth-child(4) { animation-delay: 2.8s; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .bubble.customer {
+            align-self: flex-start;
+            background: #1C1C1E; color: rgba(255,255,255,0.75);
+            border-bottom-left-radius: 4px;
+        }
+        .bubble.employee {
+            align-self: flex-end; color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+        .bubble.nova-b { background: rgba(27, 122, 74, 0.35); }
+        .bubble.aria-b { background: rgba(37, 99, 168, 0.35); }
+        .bubble.max-b { background: rgba(124, 58, 186, 0.35); }
+        .chat-outcome {
+            margin-top: 14px; padding: 10px;
+            border-radius: 10px; text-align: center;
+            font-size: 13px; font-weight: 600;
+        }
+        .chat-outcome.nova-o { background: rgba(27,122,74,0.12); color: #34C759; }
+        .chat-outcome.aria-o { background: rgba(37,99,168,0.12); color: #5AC8FA; }
+        .chat-outcome.max-o { background: rgba(124,58,186,0.12); color: #BF5AF2; }
+
+        /* ═══════════════════════════════
+           METRICS BAR
+        ═══════════════════════════════ */
+        .metrics {
+            padding: 0; margin-top: -40px; position: relative; z-index: 2;
+        }
+        .metrics-inner {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            overflow: hidden;
+        }
+        .metric {
+            padding: 36px 32px; text-align: center;
+            border-right: 1px solid var(--border);
+        }
+        .metric:last-child { border-right: none; }
+        .metric-val {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 36px; font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+        .metric-label {
+            font-size: 13px; color: var(--text-tertiary); font-weight: 500;
+        }
+
+        /* ═══════════════════════════════
+           PROBLEM
+        ═══════════════════════════════ */
+        .problem-section { padding-bottom: 80px; }
+        .section-eyebrow {
+            font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+            text-transform: uppercase; color: var(--text-tertiary);
+            margin-bottom: 16px;
+        }
+        .section-heading {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400; line-height: 1.15;
+            letter-spacing: -0.01em;
+            margin-bottom: 20px;
+        }
+        .section-sub {
+            font-size: 18px; color: var(--text-secondary);
+            max-width: 640px; line-height: 1.65; margin-bottom: 64px;
+        }
+        .problems {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .prob {
+            padding: 40px 32px; border-radius: 14px;
+            background: var(--surface); border: 1px solid var(--border);
+            transition: all 0.25s ease;
+        }
+        .prob:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            transform: translateY(-4px);
+        }
+        .prob-icon {
+            font-size: 36px; margin-bottom: 20px; display: block;
+        }
+        .prob h3 {
+            font-size: 20px; font-weight: 700; margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        .prob p {
+            font-size: 15px; color: var(--text-secondary); line-height: 1.65;
+        }
+
+        /* ═══════════════════════════════
+           EMPLOYEES
+        ═══════════════════════════════ */
+        .employees { background: var(--surface-alt); }
+        .emp-card {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 18px; margin-bottom: 28px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .emp-card:last-child { margin-bottom: 0; }
+        .emp-card:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.04);
+        }
+        .emp-inner {
+            display: grid; grid-template-columns: 1fr 360px;
+            gap: 0; min-height: 520px;
+        }
+        .emp-info { padding: 52px 48px; display: flex; flex-direction: column; justify-content: center; }
+        .emp-tag {
+            display: inline-flex; align-items: center; gap: 6px;
+            font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
+            text-transform: uppercase; padding: 5px 12px; border-radius: 6px;
+            margin-bottom: 20px; width: fit-content;
+        }
+        .emp-tag.nova-t { background: var(--nova-surface); color: var(--nova); border: 1px solid var(--nova-border); }
+        .emp-tag.aria-t { background: var(--aria-surface); color: var(--aria); border: 1px solid var(--aria-border); }
+        .emp-tag.max-t { background: var(--max-surface); color: var(--max); border: 1px solid var(--max-border); }
+        .emp-name {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 36px; font-weight: 400; margin-bottom: 4px;
+        }
+        .emp-role {
+            font-size: 16px; color: var(--text-tertiary); margin-bottom: 24px;
+        }
+        .emp-desc {
+            font-size: 16px; color: var(--text-secondary);
+            line-height: 1.7; margin-bottom: 28px; max-width: 500px;
+        }
+        .emp-features { list-style: none; margin-bottom: 32px; }
+        .emp-features li {
+            padding: 8px 0; font-size: 15px; color: var(--text-primary);
+            padding-left: 24px; position: relative; line-height: 1.5;
+        }
+        .emp-features li::before {
+            content: ''; position: absolute; left: 0; top: 14px;
+            width: 8px; height: 8px; border-radius: 2px;
+        }
+        .emp-features.nova-f li::before { background: var(--nova); }
+        .emp-features.aria-f li::before { background: var(--aria); }
+        .emp-features.max-f li::before { background: var(--max); }
+
+        .emp-kpi {
+            display: inline-flex; align-items: baseline; gap: 12px;
+            padding: 20px 24px; border-radius: 12px;
+            background: var(--surface-alt); border: 1px solid var(--border);
+        }
+        .emp-kpi-val {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 40px; font-weight: 400;
+        }
+        .emp-kpi-val.nova-v { color: var(--nova); }
+        .emp-kpi-val.aria-v { color: var(--aria); }
+        .emp-kpi-val.max-v { color: var(--max); }
+        .emp-kpi-desc { font-size: 14px; color: var(--text-secondary); max-width: 200px; line-height: 1.4; }
+
+        .emp-phone-wrap {
+            display: flex; align-items: center; justify-content: center;
+            padding: 40px 32px;
+            border-left: 1px solid var(--border);
+        }
+        .emp-phone {
+            background: var(--text-primary); border-radius: 24px;
+            padding: 14px; width: 100%; max-width: 300px;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+        }
+        .emp-phone .phone-screen { min-height: 380px; }
+
+        /* ═══════════════════════════════
+           BRAIN
+        ═══════════════════════════════ */
+        .brain-section {
+            background: var(--text-primary); color: #fff;
+        }
+        .brain-section .section-eyebrow { color: var(--gold); }
+        .brain-section .section-heading { color: #fff; }
+        .brain-section .section-sub { color: rgba(255,255,255,0.6); }
+        .brain-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .brain-card {
+            padding: 36px 28px; border-radius: 14px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: all 0.25s;
+        }
+        .brain-card:hover {
+            background: rgba(255,255,255,0.07);
+            transform: translateY(-4px);
+        }
+        .brain-card h4 {
+            font-size: 18px; font-weight: 600; margin-bottom: 12px;
+            color: var(--gold);
+        }
+        .brain-card p {
+            font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.65;
+        }
+
+        /* ═══════════════════════════════
+           HOW IT WORKS
+        ═══════════════════════════════ */
+        .how-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .how-step {
+            padding: 44px 32px; border-radius: 14px;
+            background: var(--surface); border: 1px solid var(--border);
+            transition: all 0.25s;
+        }
+        .how-step:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            transform: translateY(-4px);
+        }
+        .how-num {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 32px; color: var(--text-tertiary);
+            margin-bottom: 20px;
+        }
+        .how-step h3 {
+            font-size: 20px; font-weight: 700; margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        .how-step p {
+            font-size: 15px; color: var(--text-secondary); line-height: 1.65;
+        }
+
+        /* ═══════════════════════════════
+           PRICING
+        ═══════════════════════════════ */
+        .pricing { text-align: center; background: var(--surface-alt); }
+        .pricing .section-heading,
+        .pricing .section-sub { text-align: center; margin-left: auto; margin-right: auto; }
+
+        .pilot-box {
+            max-width: 600px; margin: 0 auto 72px;
+            background: var(--text-primary); color: #fff;
+            border-radius: 18px; padding: 56px 48px;
+            position: relative; overflow: hidden;
+        }
+        .pilot-box::before {
+            content: ''; position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle at 30% 40%, rgba(27,122,74,0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 60%, rgba(37,99,168,0.1) 0%, transparent 50%);
+        }
+        .pilot-box > * { position: relative; }
+        .pilot-label {
+            display: inline-block; font-size: 11px; font-weight: 700;
+            letter-spacing: 0.1em; text-transform: uppercase;
+            background: rgba(255,255,255,0.1); padding: 5px 14px;
+            border-radius: 6px; margin-bottom: 20px;
+        }
+        .pilot-box h3 {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 24px; font-weight: 400; margin-bottom: 8px;
+        }
+        .pilot-price {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 64px; font-weight: 400; line-height: 1;
+            margin-bottom: 8px;
+        }
+        .pilot-note { font-size: 15px; color: rgba(255,255,255,0.5); margin-bottom: 36px; }
+        .pilot-features {
+            list-style: none; text-align: left;
+            max-width: 380px; margin: 0 auto 36px;
+        }
+        .pilot-features li {
+            display: flex; align-items: center; gap: 12px;
+            padding: 8px 0; font-size: 15px; color: rgba(255,255,255,0.85);
+        }
+        .pilot-features li::before {
+            content: '✓'; font-weight: 700; font-size: 14px;
+            color: #34C759; flex-shrink: 0;
+        }
+        .pilot-cta {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: #fff; color: var(--text-primary);
+            padding: 18px 40px; border-radius: 10px;
+            font-family: inherit; font-size: 16px; font-weight: 600;
+            text-decoration: none; transition: all 0.2s;
+        }
+        .pilot-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .plans-label {
+            font-size: 14px; color: var(--text-tertiary);
+            margin-bottom: 32px;
+        }
+        .plans-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 20px; text-align: left;
+        }
+        .plan {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 14px; padding: 40px 32px;
+            transition: all 0.25s; position: relative;
+        }
+        .plan:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            transform: translateY(-4px);
+        }
+        .plan.featured {
+            border-color: var(--text-primary);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+        .plan-pop {
+            position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+            background: var(--text-primary); color: var(--bg);
+            padding: 4px 14px; border-radius: 6px;
+            font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .plan-name { font-size: 14px; font-weight: 600; color: var(--text-tertiary); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+        .plan-price {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 40px; font-weight: 400; margin-bottom: 4px;
+        }
+        .plan-pilot-price { font-size: 13px; font-weight: 600; color: var(--nova); margin-bottom: 4px; }
+        .plan-period { font-size: 14px; color: var(--text-tertiary); margin-bottom: 24px; }
+        .plan-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 28px; }
+        .plan-list { list-style: none; margin-bottom: 32px; }
+        .plan-list li {
+            padding: 7px 0; font-size: 14px; color: var(--text-primary);
+            padding-left: 22px; position: relative;
+        }
+        .plan-list li::before {
+            content: '✓'; position: absolute; left: 0;
+            font-weight: 700; font-size: 13px; color: var(--nova);
+        }
+        .plan-cta {
+            display: block; width: 100%; text-align: center;
+            padding: 14px; border-radius: 8px;
+            font-family: inherit; font-size: 14px; font-weight: 600;
+            text-decoration: none; transition: all 0.2s;
+        }
+        .plan-cta-primary { background: var(--cta-bg); color: var(--cta-text); }
+        .plan-cta-primary:hover { background: var(--accent-hover); }
+        .plan-cta-secondary { background: var(--surface-alt); color: var(--text-primary); border: 1px solid var(--border); }
+        .plan-cta-secondary:hover { border-color: var(--text-primary); }
+
+        /* ═══════════════════════════════
+           FINAL CTA
+        ═══════════════════════════════ */
+        .final-cta {
+            text-align: center;
+            padding: 120px 0;
+        }
+        .final-cta .section-heading {
+            max-width: 600px; margin: 0 auto 20px;
+        }
+        .final-cta .section-sub {
+            text-align: center; margin: 0 auto 48px; max-width: 560px;
+        }
+        .final-details {
+            margin-top: 32px;
+            font-size: 14px; color: var(--text-tertiary);
+            display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;
+        }
+
+        /* ═══════════════════════════════
+           FOOTER
+        ═══════════════════════════════ */
+        footer {
+            background: var(--text-primary); color: rgba(255,255,255,0.6);
+            padding: 64px 0 32px;
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px; margin-bottom: 48px;
+        }
+        .footer-brand { max-width: 300px; }
+        .footer-logo {
+            font-size: 18px; font-weight: 700; letter-spacing: 0.04em;
+            text-transform: uppercase; color: #fff; margin-bottom: 16px;
+        }
+        .footer-desc { font-size: 14px; line-height: 1.65; margin-bottom: 16px; }
+        .footer-email { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; }
+        .footer-email:hover { color: #fff; }
+        .footer-col h4 {
+            font-size: 13px; font-weight: 600; color: #fff;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            margin-bottom: 16px;
+        }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 10px; }
+        .footer-col a {
+            color: rgba(255,255,255,0.6); text-decoration: none;
+            font-size: 14px; transition: color 0.2s;
+        }
+        .footer-col a:hover { color: #fff; }
+        .footer-bottom {
+            padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 13px;
+        }
+        .footer-social { display: flex; gap: 20px; }
+        .footer-social a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 13px; }
+        .footer-social a:hover { color: #fff; }
+
+        /* ═══════════════════════════════
+           RESPONSIVE
+        ═══════════════════════════════ */
+        @media (max-width: 968px) {
+            .nav-links { display: none; }
+            .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+            .metrics-inner { grid-template-columns: repeat(2, 1fr); }
+            .metric:nth-child(2) { border-right: none; }
+            .problems, .how-grid, .brain-grid, .plans-grid { grid-template-columns: 1fr; }
+            .emp-inner { grid-template-columns: 1fr; }
+            .emp-phone-wrap { border-left: none; border-top: 1px solid var(--border); }
+            .emp-info { padding: 36px 24px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+            section { padding: 80px 0; }
+            .hero { padding: 120px 0 60px; }
+            .pilot-box { padding: 40px 24px; }
+        }
+
+        /* ═══════════════════════════════
+           SCROLL REVEAL
+        ═══════════════════════════════ */
+        .reveal {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-inner">
+        <div class="logo">Sonoma <span>Beta</span></div>
+        <ul class="nav-links">
+            <li><a href="#employees">Team</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" class="nav-cta" target="_blank">Book a Call</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    14 of 20 pilot spots remaining
+                </div>
+                <h1>Your Shopify store is losing revenue <em>right now.</em></h1>
+                <p class="hero-sub">Abandoned carts. Slow support. Customers who never come back. Sonoma gives you three AI employees that fix all three — live on your store in 48 hours.</p>
+                <div class="hero-ctas">
+                    <a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" class="btn btn-primary btn-arrow" target="_blank">Book your free strategy call</a>
+                    <a href="#employees" class="btn btn-ghost">Meet the team</a>
+                </div>
+                <div class="hero-proof">
+                    <span class="hero-proof-item">Connects to Shopify in minutes</span>
+                    <span class="hero-proof-sep">·</span>
+                    <span class="hero-proof-item">Live in 48 hours</span>
+                    <span class="hero-proof-sep">·</span>
+                    <span class="hero-proof-item">Full refund if no results</span>
+                </div>
+            </div>
+            <div class="hero-phone">
+                <div class="phone-screen">
+                    <div class="phone-bar">
+                        <div class="phone-avi">N</div>
+                        <div class="phone-meta">
+                            <div class="phone-name">Nova · Your Store</div>
+                            <div class="phone-channel">WhatsApp</div>
+                        </div>
+                        <div class="phone-online"></div>
+                    </div>
+                    <div class="chat">
+                        <div class="bubble customer">Hey I was looking at the black hoodie but the shipping seemed steep for one item</div>
+                        <div class="bubble employee nova-b">Totally get that — the Essential Hoodie is actually our bestseller! I can do free shipping if you grab it in the next hour. Want me to hold your size?</div>
+                        <div class="bubble customer">Oh nice yeah that works! How do I check out?</div>
+                        <div class="bubble employee nova-b">Here's your link with free shipping applied → yourstore.com/cart/nova-abc</div>
+                    </div>
+                    <div class="chat-outcome nova-o">$89 recovered from abandoned cart</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- METRICS -->
+<div class="metrics">
+    <div class="container">
+        <div class="metrics-inner">
+            <div class="metric">
+                <div class="metric-val">48hrs</div>
+                <div class="metric-label">From call to live</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">10–25%</div>
+                <div class="metric-label">Abandoned carts recovered</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">80%</div>
+                <div class="metric-label">Support automated</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">2×</div>
+                <div class="metric-label">Repeat purchase rate</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem-section">
+    <div class="container">
+        <div class="section-eyebrow">The problem</div>
+        <h2 class="section-heading">You built a brand.<br>Not a support department.</h2>
+        <p class="section-sub">Somewhere between your first sale and today, running the store became a full-time job — and it's costing you in three places.</p>
+        <div class="problems">
+            <div class="prob reveal">
+                <span class="prob-icon">🛒</span>
+                <h3>Carts are abandoned daily</h3>
+                <p>70% of carts are abandoned. Your recovery emails get 15% open rates. That's revenue walking out the door — and email isn't bringing it back.</p>
+            </div>
+            <div class="prob reveal">
+                <span class="prob-icon">💬</span>
+                <h3>Support is slow and expensive</h3>
+                <p>Customers message at midnight. You reply at 10am. By then they've bought elsewhere or left a bad review. Hiring more people just compresses your margins.</p>
+            </div>
+            <div class="prob reveal">
+                <span class="prob-icon">👻</span>
+                <h3>Customers buy once and vanish</h3>
+                <p>You paid to acquire them. They bought once. Then silence. No follow-up, no second purchase. You're stuck finding new buyers instead of keeping the ones you have.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EMPLOYEES -->
+<section class="employees" id="employees">
+    <div class="container">
+        <div class="section-eyebrow">Your AI team</div>
+        <h2 class="section-heading">Three employees. One job each.<br>Every one pays for itself.</h2>
+        <p class="section-sub">Each employee is trained on your store the moment you connect — your products, your policies, your tone. They never clock off.</p>
+
+        <!-- NOVA -->
+        <div class="emp-card reveal">
+            <div class="emp-inner">
+                <div class="emp-info">
+                    <div class="emp-tag nova-t">Revenue Recovery</div>
+                    <div class="emp-name serif">Nova</div>
+                    <div class="emp-role">Recovers every sale your store is currently losing</div>
+                    <p class="emp-desc">Nova reaches abandoned cart customers on WhatsApp and SMS — where open rates are 80%, not 15%. She sends messages that feel personal, handles objections in real time, and closes the sale before they forget about you.</p>
+                    <ul class="emp-features nova-f">
+                        <li>Reaches abandoned carts via WhatsApp within 30 minutes</li>
+                        <li>Handles objections — shipping, sizing, price concerns</li>
+                        <li>Offers discounts only when needed to close</li>
+                        <li>Post-purchase upsells with personalised picks</li>
+                    </ul>
+                    <div class="emp-kpi">
+                        <div class="emp-kpi-val nova-v">10–25%</div>
+                        <div class="emp-kpi-desc">of abandoned carts recovered — revenue you're currently losing</div>
+                    </div>
+                </div>
+                <div class="emp-phone-wrap">
+                    <div class="emp-phone">
+                        <div class="phone-screen">
+                            <div class="phone-bar">
+                                <div class="phone-avi" style="background:var(--nova)">N</div>
+                                <div class="phone-meta">
+                                    <div class="phone-name">Nova · Your Store</div>
+                                    <div class="phone-channel">WhatsApp · Active</div>
+                                </div>
+                            </div>
+                            <div class="chat">
+                                <div class="bubble customer">Saw the joggers but not sure about the fit — I'm usually between sizes</div>
+                                <div class="bubble employee nova-b">Hey! Our joggers run true to size but have a relaxed fit — if you're between, go with your usual. We do free exchanges if it's not right 👊</div>
+                                <div class="bubble customer">Ok cool, I'll go for it</div>
+                                <div class="bubble employee nova-b">Nice! Here's your cart with everything saved → yourstore.com/cart/nova-fit</div>
+                            </div>
+                            <div class="chat-outcome nova-o">$65 recovered · sizing objection handled</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARIA -->
+        <div class="emp-card reveal">
+            <div class="emp-inner">
+                <div class="emp-info">
+                    <div class="emp-tag aria-t">Customer Support</div>
+                    <div class="emp-name serif">Aria</div>
+                    <div class="emp-role">Handles every customer message in under 10 seconds</div>
+                    <p class="emp-desc">Order tracking, returns, product questions, complaints — Aria checks your Shopify data in real time and gives real answers. Not a chatbot. An employee who knows your entire store and follows your policies exactly.</p>
+                    <ul class="emp-features aria-f">
+                        <li>Answers "where's my order?" instantly with live tracking</li>
+                        <li>Handles returns and refunds per your exact policy</li>
+                        <li>Knows your full catalogue — answers product questions accurately</li>
+                        <li>Escalates to human only when needed — under 10% of cases</li>
+                    </ul>
+                    <div class="emp-kpi">
+                        <div class="emp-kpi-val aria-v">80%</div>
+                        <div class="emp-kpi-desc">of support handled instantly — your inbox finally goes quiet</div>
+                    </div>
+                </div>
+                <div class="emp-phone-wrap">
+                    <div class="emp-phone">
+                        <div class="phone-screen">
+                            <div class="phone-bar">
+                                <div class="phone-avi" style="background:var(--aria)">A</div>
+                                <div class="phone-meta">
+                                    <div class="phone-name">Aria · Your Store</div>
+                                    <div class="phone-channel">WhatsApp · Active</div>
+                                </div>
+                            </div>
+                            <div class="chat">
+                                <div class="bubble customer">I ordered 3 days ago and haven't heard anything? Order #4827</div>
+                                <div class="bubble employee aria-b">Just checked — your order shipped yesterday and is in transit. Here's tracking: track.co/4827. Expected Thursday by 6pm 📦</div>
+                                <div class="bubble customer">Oh perfect thanks! Can I still add something?</div>
+                                <div class="bubble employee aria-b">It's already shipped so I can't modify it — but here's a free shipping code for your next order: THANKYOU 🙌</div>
+                            </div>
+                            <div class="chat-outcome aria-o">Replied in 8 seconds · customer retained</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAX -->
+        <div class="emp-card reveal">
+            <div class="emp-inner">
+                <div class="emp-info">
+                    <div class="emp-tag max-t">Customer Retention</div>
+                    <div class="emp-name serif">Max</div>
+                    <div class="emp-role">Turns one-time buyers into repeat customers</div>
+                    <p class="emp-desc">Most customers buy once and vanish. Max follows up after every delivery, collects reviews at peak satisfaction, and brings lapsed customers back with the right offer at the right time.</p>
+                    <ul class="emp-features max-f">
+                        <li>Post-delivery check-in catches problems before bad reviews</li>
+                        <li>Requests reviews at peak satisfaction — day 3-5 after delivery</li>
+                        <li>Personalised recommendations from purchase history</li>
+                        <li>Re-engages lapsed customers after 60 days of silence</li>
+                    </ul>
+                    <div class="emp-kpi">
+                        <div class="emp-kpi-val max-v">2×</div>
+                        <div class="emp-kpi-desc">repeat purchase rate — they come back without being chased</div>
+                    </div>
+                </div>
+                <div class="emp-phone-wrap">
+                    <div class="emp-phone">
+                        <div class="phone-screen">
+                            <div class="phone-bar">
+                                <div class="phone-avi" style="background:var(--max)">M</div>
+                                <div class="phone-meta">
+                                    <div class="phone-name">Max · Your Store</div>
+                                    <div class="phone-channel">WhatsApp · Automated</div>
+                                </div>
+                            </div>
+                            <div class="chat">
+                                <div class="bubble employee max-b">Hey James! Your Essential Hoodie should've arrived — how's it looking? Anything off, let me know and I'll sort it 🙌</div>
+                                <div class="bubble customer">Fits great honestly, love the material</div>
+                                <div class="bubble employee max-b">Awesome! If you've got 30 seconds, a quick review would mean the world → review.co/4827. As a thank you — 15% off next order: LOYAL15</div>
+                                <div class="bubble customer">Done! Already eyeing the joggers 👀</div>
+                            </div>
+                            <div class="chat-outcome max-o">5-star review · repeat purchase incoming</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BRAIN -->
+<section class="brain-section">
+    <div class="container">
+        <div class="section-eyebrow">The intelligence layer</div>
+        <h2 class="section-heading">One team. <span class="serif" style="color:var(--gold)">One brain.</span></h2>
+        <p class="section-sub">Your employees aren't separate tools — they share context. Every interaction one has makes the others smarter.</p>
+        <div class="brain-grid">
+            <div class="brain-card reveal">
+                <h4>Context aware</h4>
+                <p>When Aria handles a complaint, Nova knows not to upsell that customer today. When Max gets a 5-star review, Nova sends a VIP offer. They work as a team.</p>
+            </div>
+            <div class="brain-card reveal">
+                <h4>Always learning</h4>
+                <p>Every conversation teaches the system what converts, what times work best, and what your customers actually respond to — specific to your store.</p>
+            </div>
+            <div class="brain-card reveal">
+                <h4>One dashboard</h4>
+                <p>Revenue recovered. Tickets handled. Customers retained. Full visibility into what your AI team is doing and the results they're driving.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+    <div class="container">
+        <div class="section-eyebrow">How it works</div>
+        <h2 class="section-heading">Live in 48 hours.<br>No technical setup on your end.</h2>
+        <p class="section-sub">We handle everything. You just connect your store and show up for the call.</p>
+        <div class="how-grid">
+            <div class="how-step reveal">
+                <div class="how-num">01</div>
+                <h3>Book a free call</h3>
+                <p>We look at your store together and find where you're losing the most money. No prep needed — just show up.</p>
+            </div>
+            <div class="how-step reveal">
+                <div class="how-num">02</div>
+                <h3>We build your employee</h3>
+                <p>We connect to Shopify, train your first AI employee on your products and policies, and test everything before it goes live.</p>
+            </div>
+            <div class="how-step reveal">
+                <div class="how-num">03</div>
+                <h3>Watch revenue come in</h3>
+                <p>Within days — recovered carts, instant support, customers coming back. We review results at 30 days and plan who to hire next.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-eyebrow">Pricing</div>
+        <h2 class="section-heading">Three employees.<br>Less than the cost of one.</h2>
+        <p class="section-sub">Start with a $997 pilot. If it doesn't pay for itself in 30 days, full refund. Pilot customers get 50% off monthly plans for life.</p>
+
+        <div class="pilot-box">
+            <div class="pilot-label">Start here</div>
+            <h3>The Pilot</h3>
+            <div class="pilot-price">$997</div>
+            <p class="pilot-note">One-time · no monthly commitment</p>
+            <ul class="pilot-features">
+                <li>Your first AI employee built and live in 48 hours</li>
+                <li>Connected to your Shopify store with real data from day one</li>
+                <li>30-day results review — we show you the exact ROI</li>
+                <li>50% off any monthly plan for life when you scale</li>
+                <li>Full refund if it doesn't pay for itself</li>
+            </ul>
+            <a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" class="pilot-cta" target="_blank">Book Your Free Strategy Call →</a>
+        </div>
+
+        <p class="plans-label">After your pilot, pick the plan that fits. Pilot customers pay 50% less — forever.</p>
+
+        <div class="plans-grid">
+            <div class="plan reveal">
+                <div class="plan-name">Starter</div>
+                <div class="plan-price">$497</div>
+                <div class="plan-pilot-price">Pilot price: $248/mo</div>
+                <div class="plan-period">per month</div>
+                <div class="plan-desc">One AI employee. The perfect first hire for any growing Shopify brand.</div>
+                <ul class="plan-list">
+                    <li>1 AI employee — Nova, Aria, or Max</li>
+                    <li>Up to 1,000 interactions per month</li>
+                    <li>WhatsApp and SMS channels</li>
+                    <li>Live dashboard</li>
+                    <li>Direct support from our team</li>
+                </ul>
+                <a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" class="plan-cta plan-cta-secondary" target="_blank">Start With Pilot — $997</a>
+            </div>
+            <div class="plan featured reveal">
+                <div class="plan-pop">Most popular</div>
+                <div class="plan-name">Growth</div>
+                <div class="plan-price">$1,497</div>
+                <div class="plan-pilot-price">Pilot price: $748/mo</div>
+                <div class="plan-period">per month</div>
+                <div class="plan-desc">All three employees working as a team with shared intelligence.</div>
+                <ul class="plan-list">
+                    <li>All 3 AI employees</li>
+                    <li>Up to 5,000 interactions per month</li>
+                    <li>Shared Brain intelligence layer</li>
+                    <li>Advanced analytics dashboard</li>
+                    <li>Priority support + onboarding</li>
+                </ul>
+                <a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" class="plan-cta plan-cta-primary" target="_blank">Start With Pilot — $997</a>
+            </div>
+            <div class="plan reveal">
+                <div class="plan-name">Scale</div>
+                <div class="plan-price">$2,997</div>
+                <div class="plan-pilot-price">Pilot price: $1,498/mo</div>
+                <div class="plan-period">per month</div>
+                <div class="plan-desc">Full AI operations team for brands scaling without growing headcount.</div>
+                <ul class="plan-list">
+                    <li>All 3 employees + custom builds</li>
+                    <li>Up to 20,000 interactions per month</li>
+                    <li>Dedicated account manager</li>
+                    <li>White-label option for agencies</li>
+                    <li>Custom AI employees</li>
+                </ul>
+                <a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" class="plan-cta plan-cta-secondary" target="_blank">Start With Pilot — $997</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+    <div class="container">
+        <div class="section-eyebrow">14 pilot spots remaining</div>
+        <h2 class="section-heading">Hire your first AI employee this week.</h2>
+        <p class="section-sub">$997 gets you a custom-built AI employee live in 48 hours — plus 50% off your monthly plan for life. Book a free 30-minute call.</p>
+        <a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" class="btn btn-primary btn-arrow" target="_blank">Book Your Free Strategy Call</a>
+        <div class="final-details">
+            <span>Free 30-min call</span>
+            <span>·</span>
+            <span>Live in 48 hours</span>
+            <span>·</span>
+            <span>50% off for life</span>
+            <span>·</span>
+            <span>Only 20 pilot spots ever</span>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">Sonoma</div>
+                <p class="footer-desc">AI employees that recover lost revenue, handle support, and retain customers for Shopify stores.</p>
+                <a href="mailto:marko@sonoma-system.com" class="footer-email">marko@sonoma-system.com</a>
+            </div>
+            <div class="footer-col">
+                <h4>Team</h4>
+                <ul>
+                    <li><a href="#employees">Nova — Revenue Recovery</a></li>
+                    <li><a href="#employees">Aria — Customer Support</a></li>
+                    <li><a href="#employees">Max — Retention</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="https://calendly.com/marko-micovski-sonoma-system/sonoma-system-meeting" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Sonoma System. All rights reserved.</span>
+            <div class="footer-social">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Scroll reveal
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
